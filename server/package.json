@@ -1,0 +1,35 @@
+{
+  "name": "money-account",
+  "version": "1.0.0",
+  "description": "Agile Code Challenge",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./ --fix",
+    "test": "jest --setupFiles --forceExit --testTimeout=10000",
+    "dev": "nodemon index.js",
+    "dockerdev": "nodemon --legacy-watch index.js",
+    "prod": "cross-env NODE_ENV=production node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magico1114/node-money-account.git"
+  },
+  "author": "Agustin Camero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magico1114/node-money-account/issues"
+  },
+  "homepage": "https://github.com/magico1114/node-money-account#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cross-env": "^7.0.2",
+    "express": "^4.17.1",
+    "http-status-codes": "^2.1.4",
+    "moment": "^2.29.1",
+    "nodemon": "^2.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^7.12.0",
+    "eslint-config-strongloop": "^2.1.0"
+  }
+}
